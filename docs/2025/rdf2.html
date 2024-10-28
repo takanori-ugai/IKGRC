@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Multimodal AI Reasoning Challenge @Home (MAI@Home)</title>
+    <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,400,500,700&display=swap&subset=japanese"
+          rel="stylesheet">
+    <meta property="og:site_name" content="Multimodal AI Reasoning Challenge @Home"/>
+    <meta property="og:title" content="Multimodal AI Reasoning Challenge @Home"/>
+    <meta property="og:url" content="https://ikgrc.org/2025/"/>
+    <meta property="og:image" content="https://ikgrc.org/2025/assets/img/top/01.jpg"/>
+    <meta property="og:description" content="Multimodal AI Reasoning Challenge @Home"/>
+    <meta property="og:type" content="website"/>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@kgrchallenge">
+    <meta name="twitter:creator" content="@kgrchallenge">
+    <meta name="twitter:title" content="Multimodal AI Reasoning Challenge @Home">
+    <meta name="twitter:description" content="Multimodal AI Reasoning Challenge @Home">
+    <meta name="twitter:image" content="https://ikgrc.org/2025/assets/img/top/twitter.jpg">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .bg01 {background: url(assets/img/top/01.jpg) bottom left / contain; width: 100%;background-color:rgba(255,255,255,0.70); background-blend-mode: lighten;}
+    </style>
+</head>
+<body style="--bs-body-font-size: 1.1rem" class="bg01 grid row-gap-3">
+<div class="container  bg-primary-subtle">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MAI@Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active border rounded border-primary mx-1" aria-current="page"
+                       href="index.html">Home</a>
+                    <a class="nav-link border rounded border-primary mx-1" href="schedule.html">Important Days</a>
+                    <a class="nav-link border rounded border-primary mx-1" href="application.html">Application Guide</a>
+                    <a class="nav-link border rounded border-primary mx-1" href="rdf.html">Dataset</a>
+                    <a class="nav-link border rounded border-primary mx-1" href="organizers.html">Organizers</a>
+                    <a class="nav-link border rounded border-primary mx-1" href="history.html">Past Events</a>
+                    <a class="nav-link border rounded border-primary mx-1" href="index_ja.html">日本語/Japanese</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="container bg-primary-subtl">
+    <div class="container">
+        <h1 class="h2">Dataset</h1>
+        <div class="col-md-12">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button fs-3" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Location
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <h4>Movie</h4>
+                            <p>
+                                <a href="https://kgrc4si.home.kg/Movie/"
+                                   target="_blank">https://kgrc4si.home.kg/Movie/</a> or in zip format:<a
+                                    href="https://github.com/KnowledgeGraphJapan/KGRC-RDF/tags" target="_blank">https://github.com/KnowledgeGraphJapan/KGRC-RDF/tags</a>
+                            </p>
+                            <h4>Knowledge Graph</h4>
+
+                            The knowledge graph is available in Resource Description Framework (RDF) format and
+                            published on GitHub at <a
+                                href="https://github.com/KnowledgeGraphJapan/KGRC-RDF/tree/kgrc4si/CompleteData">KGRC-RDF
+                            repository</a>. It is provided in both TTL and N-TRIPLE formats
+                            for easy integration and handling in machine learning tasks. Additionally, it is also
+                            available in the ActionGenome format, allowing for enhanced versatility across various
+                            applications.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button fs-3 collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Knowledge Graph Structure and Correspondence to Video
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>The knowledge graph provided for the reasoning challenge is expressed with "events" and
+                                corresponding "actions," "main objects," "target objects," "agents," "relationships
+                                between scenes (nextEvent)," "times," etc. Please see the slides below for more
+                                details.</p>
+                            <div class="png">
+                                <ul>
+                                    <li>Schema (correspondence with video)<BR><img src="SWRLExample/Slide1.PNG"
+                                                                                   alt="Slide 1"/></li>
+                                    <li>Example of Knowledge Graph<BR><img src="SWRLExample/Slide2.PNG" alt="Slide 2"/>
+                                    </li>
+                                    <li><img src="SWRLExample/Slide3.jpg" alt="Slide 3"/></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button fs-3 collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Usage of the Knowledge Graph
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <h4>with Browser</h4>
+                          <p>
+                            You can view the knowledge graph in a web browser. It is available at <a
+                                href="https://kgrc4si.home.kg:7200/" target="_blank">https://kgrc4si.home.kg:7200/</a>,
+                            please refer to the GraphDB <a
+                                href="https://graphdb.ontotext.com/documentation/10.0/workbench.html" target="_blank">manual</a>
+                            for more details.</p>
+                          <hr/>
+                          <h4>SPARQL Endpoint</h4>
+                          <p>We provide an endpoint for searching the knowledge graph using SPARQL queries. Please avoid making a large number of requests that could overload the server.</p>
+                          <p><strong>Endpoint: </strong><a href="https://kgrc4si.home.kg:7200/repositories/KGRC4SIv05" target="_blank">https://kgrc4si.home.kg:7200/repositories/KGRC4SIv05</a></p>
+                          <p><strong>Parameters:</strong> <code>query</code> = {URL-encoded SPARQL query}, <code>format</code> = {desired data format (e.g., json, xml, csv)}</p>
+                        <hr>
+                          <h4>in Python Porgram with rdflib in Google Colaboratory</h4>
+                          <p>Here is an example of using the above SPARQL endpoint with a program (Python) in Google Colab. The same applies to your own Jupyter notebook.
+                          <ul>
+                            <li>
+                              <a href="https://colab.research.google.com/github/takanori-ugai/Challenge/blob/master/Sample0.ipynb" target="_blank">Execution Example Using Python (rdflib)</a>
+                            </li>
+                          </ul>
+                        </div>
+                    </div>
+                </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button fs-3 collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Sample SPARQL Queries
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <h4 class="h04">Retrieve events during the activity of "browsing the internet"</h4>
+                    <pre><code class="prettyprint lang-sparql">
+PREFIX ex: <http://kgrc4si.home.kg/virtualhome2kg/instance/>
+PREFIX vh2kg: <http://kgrc4si.home.kg/virtualhome2kg/ontology/>
+SELECT DISTINCT * WHERE {
+  ex:browse_internet_scene1 vh2kg:hasEvent ?event .
+  ?event vh2kg:action ?action .
+}
+                </code></pre>
+                    <h4 class="h04">Retrieve a list of activities</h4>
+                    <pre><code class="prettyprint lang-sparql">
+PREFIX ex: <http://kgrc4si.home.kg/virtualhome2kg/instance/>
+PREFIX vh2kg: <http://kgrc4si.home.kg/virtualhome2kg/ontology/>
+SELECT DISTINCT * WHERE {
+  ?activity vh2kg:virtualHome ex:scene1 .
+}
+                </code></pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
